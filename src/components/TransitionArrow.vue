@@ -18,6 +18,9 @@ export default {
   },
   methods: {
     /**
+     * pages:vuexのpages[]をgetしたやつ
+     * index:vuexのindexをgetしたやつ
+     *
      * storeにあるindexをインクリメント
      * indexをget
      * pages[index]で場所を指定して注入
@@ -42,7 +45,20 @@ export default {
       } else {
         this.$store.commit("increment");
       }
+    },
+    keyAction(e) {
+      if (e.keyCode == 37) {
+        this.backPage();
+      } else if (e.keyCode == 39) {
+        this.nextPage();
+      }
     }
+  },
+  mounted() {
+    window.addEventListener("keydown", this.keyAction);
+  },
+  beforeDestroy() {
+    window.removeEventListener("keydown", this.keyAction);
   }
 };
 </script>
