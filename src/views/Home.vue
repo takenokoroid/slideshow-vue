@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <v-flex fill-height md12>
     <p>hello world</p>
-  </div>
+  </v-flex>
 </template>
 
 <script>

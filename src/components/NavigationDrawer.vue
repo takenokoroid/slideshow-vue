@@ -2,7 +2,7 @@
   <div>
     <v-navigation-drawer v-model="drawer" app>
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link @click="transitionPage(0)">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -13,7 +13,9 @@
 
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-alpha-e-box</v-icon>
+            <v-icon>
+              mdi-alpha-e-box
+            </v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>End</v-list-item-title>
@@ -42,9 +44,14 @@
 export default {
   data: () => ({
     drawer: null
-  })
+  }),
+  methods: {
+    transitionPage: function(n) {
+      this.$store.commit("changeIndex", n);
+      this.$router.push(this.$store.state.pages[n]);
+    }
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>

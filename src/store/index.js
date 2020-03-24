@@ -14,6 +14,9 @@ export default new Vuex.Store({
     },
     decrement: state => {
       state.index--;
+    },
+    changeIndex: (state, n) => {
+      state.index = n;
     }
   },
   actions: {},
