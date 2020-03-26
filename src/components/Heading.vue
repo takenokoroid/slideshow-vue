@@ -1,13 +1,20 @@
 <template>
   <v-row>
     <v-flex md10 class="text-right  display-4">
-      TextTextText
+      {{ text }}
     </v-flex>
   </v-row>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    text: {
+      type: String,
+      default: "TextTextText"
+    }
+  }
+};
 </script>
 
 <style>
