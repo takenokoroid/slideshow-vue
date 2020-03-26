@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    pages: ["/", "/about"],
+    pages: ["/", "/about", "/head"],
     index: 0
   },
   mutations: {
