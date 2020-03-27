@@ -5,8 +5,14 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    pages: ["/", "/about", "/start"],
-    index: 0
+    pages: ["/", "/about", "/start/title"],
+    index: 0,
+    datasets: [
+      {
+        id: 1,
+        textdata: "自己紹介"
+      }
+    ]
   },
   mutations: {
     increment: state => {
@@ -27,6 +33,9 @@ export default new Vuex.Store({
     },
     getIndex(state) {
       return state.index;
+    },
+    getDataSets(state) {
+      return state.datasets;
     }
   }
 });
