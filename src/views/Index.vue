@@ -1,15 +1,15 @@
 <template>
-  <StartSlide :text="parentsText"></StartSlide>
+  <IndexHeader :text="parentsText"></IndexHeader>
 </template>
 
 <script>
-import StartSlide from "../components/IndexHeader";
+import IndexHeader from "../components/IndexHeader";
 
 const index = [0];
 
 export default {
   components: {
-    StartSlide
+    IndexHeader
   },
   data: () => {
     return {

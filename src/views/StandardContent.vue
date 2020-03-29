@@ -1,12 +1,12 @@
 <template>
-  <PresenHeader :text="parentsText"></PresenHeader>
+  <StandardHeader :text="parentsText"></StandardHeader>
 </template>
 
 <script>
-import PresenHeader from "../components/StandardHeader";
+import StandardHeader from "../components/StandardHeader";
 export default {
   components: {
-    PresenHeader
+    StandardHeader
   },
   data: () => {
     return {
