@@ -1,12 +1,17 @@
 <template>
-  <StandardHeader :text="parentsText"></StandardHeader>
+  <div>
+    <StandardHeader :text="parentsText"></StandardHeader>
+    <StandardContent></StandardContent>
+  </div>
 </template>
 
 <script>
 import StandardHeader from "../components/StandardHeader";
+import StandardContent from "../components/StandardContent";
 export default {
   components: {
-    StandardHeader
+    StandardHeader,
+    StandardContent
   },
   data: () => {
     return {

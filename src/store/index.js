@@ -14,7 +14,8 @@ export default new Vuex.Store({
       },
       {
         id: 1,
-        textdata: "自己紹介"
+        textdata: "自己紹介",
+        link: require("../assets/myImage.jpg")
       }
     ]
   },

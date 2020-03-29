@@ -12,7 +12,7 @@ const routes = [
   {
     path: "/main",
     name: "main",
-    component: () => import("../views/StandardContent.vue")
+    component: () => import("../views/StandardSlide.vue")
   }
 ];
 
