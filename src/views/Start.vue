@@ -5,7 +5,7 @@
 <script>
 import StartSlide from "../components/Heading";
 
-const index = [2];
+const index = [0];
 
 export default {
   components: {
