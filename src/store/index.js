@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    pages: ["/", "/about", "/start/title"],
+    pages: ["/", "/about", "/start/title", "/main"],
     index: 0,
     datasets: [
       {
