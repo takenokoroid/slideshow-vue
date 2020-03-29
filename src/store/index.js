@@ -9,6 +9,10 @@ export default new Vuex.Store({
     index: 0,
     datasets: [
       {
+        id: 0,
+        textdata: "自己紹介"
+      },
+      {
         id: 1,
         textdata: "自己紹介"
       }

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import StartSlide from "../components/Heading";
+import StartSlide from "../components/IndexHeader";
 
 const index = [0];
 

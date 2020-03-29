@@ -7,12 +7,12 @@ const routes = [
   {
     path: "/",
     name: "Start",
-    component: () => import("../views/Start.vue")
+    component: () => import("../views/Index.vue")
   },
   {
     path: "/main",
     name: "main",
-    component: () => import("../views/Next.vue")
+    component: () => import("../views/StandardContent.vue")
   }
 ];
 
