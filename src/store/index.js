@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    pages: ["/", "/main"],
+    pages: ["/", "/main/myprofile", "/main/works"],
     index: 0,
     datasets: [
       {
@@ -15,6 +15,11 @@ export default new Vuex.Store({
       {
         id: 1,
         textdata: "自己紹介",
+        link: require("../assets/myImage.jpg")
+      },
+      {
+        id: 2,
+        textdata: "いろいろ",
         link: require("../assets/myImage.jpg")
       }
     ]

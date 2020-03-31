@@ -5,8 +5,6 @@
 <script>
 import IndexHeader from "../components/IndexHeader";
 
-const index = [0];
-
 export default {
   components: {
     IndexHeader
@@ -21,9 +19,10 @@ export default {
   },
   methods: {
     importText: function() {
-      if (this.$store.getters.getIndex == index[0]) {
+      let index = this.$store.getters.getIndex;
+      if (Number.isInteger(index)) {
         let data = this.$store.getters.getDataSets;
-        this.parentsText = data[0].textdata;
+        this.parentsText = data[index].textdata;
       }
     }
   }

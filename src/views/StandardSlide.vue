@@ -20,24 +20,33 @@ export default {
     return {
       parentsText: "init-text",
       index: this.$store.getters.getIndex,
+      data: this.$store.getters.getDataSets,
       components: ["dummydummydummy", "StandardContent", "WorksContent"]
     };
+  },
+  created: function() {
+    this.importText();
+  },
+  mounted: function() {
+    this.$store.watch(
+      () => {
+        return this.$store.state.index;
+      },
+      () => {
+        this.index = this.$store.getters.getIndex;
+        this.parentsText = this.data[this.index].textdata;
+      }
+    );
   },
   computed: {
     currentComponent: function() {
       return this.components[this.index];
     }
   },
-  created: function() {
-    this.importText();
-  },
   methods: {
     importText: function() {
-      //書き直す
-      let index = this.$store.getters.getIndex;
-      if (Number.isInteger(index)) {
-        let data = this.$store.getters.getDataSets;
-        this.parentsText = data[index].textdata;
+      if (Number.isInteger(this.index)) {
+        this.parentsText = this.data[this.index].textdata;
       }
     }
   }
