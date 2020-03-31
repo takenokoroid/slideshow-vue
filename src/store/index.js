@@ -19,7 +19,7 @@ export default new Vuex.Store({
       },
       {
         id: 2,
-        textdata: "いろいろ",
+        textdata: "開発してきたもの",
         link: require("../assets/myImage.jpg")
       }
     ]
