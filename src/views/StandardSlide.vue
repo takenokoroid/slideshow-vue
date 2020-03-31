@@ -1,22 +1,32 @@
 <template>
-  <div>
+  <div class="fill-width">
     <StandardHeader :text="parentsText"></StandardHeader>
-    <StandardContent></StandardContent>
+    <component :is="currentComponent"></component>
   </div>
 </template>
 
 <script>
 import StandardHeader from "../components/StandardHeader";
 import StandardContent from "../components/StandardContent";
+import WorksContent from "../components/WorksContent";
+
 export default {
   components: {
     StandardHeader,
-    StandardContent
+    StandardContent,
+    WorksContent
   },
-  data: () => {
+  data: function() {
     return {
-      parentsText: "init-text"
+      parentsText: "init-text",
+      index: this.$store.getters.getIndex,
+      components: ["dummydummydummy", "StandardContent", "WorksContent"]
     };
+  },
+  computed: {
+    currentComponent: function() {
+      return this.components[this.index];
+    }
   },
   created: function() {
     this.importText();
@@ -24,13 +34,18 @@ export default {
   methods: {
     importText: function() {
       //書き直す
-      if (this.$store.getters.getIndex == 1) {
+      let index = this.$store.getters.getIndex;
+      if (Number.isInteger(index)) {
         let data = this.$store.getters.getDataSets;
-        this.parentsText = data[0].textdata;
+        this.parentsText = data[index].textdata;
       }
     }
   }
 };
 </script>
 
-<style></style>
+<style>
+.fill-width {
+  width: 100%;
+}
+</style>
