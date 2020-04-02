@@ -27,6 +27,7 @@ export default {
         "dummydummydummy",
         "StandardContent",
         "WorksContent",
+        "IdealImage",
         "IdealImage"
       ]
     };
@@ -52,6 +53,7 @@ export default {
   },
   methods: {
     importText: function() {
+      //ここのifいらない気が
       if (Number.isInteger(this.index)) {
         this.parentsText = this.data[this.index].textdata;
       }
