@@ -28,6 +28,7 @@ export default {
         "StandardContent",
         "WorksContent",
         "IdealImage",
+        "IdealImage",
         "IdealImage"
       ]
     };

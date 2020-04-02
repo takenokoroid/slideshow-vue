@@ -10,7 +10,8 @@ export default new Vuex.Store({
       "/main/myprofile",
       "/main/works",
       "/main/IdealImage",
-      "/main/wantToDo"
+      "/main/userDueTo",
+      "/main/engineerDueTo"
     ],
     index: 0,
     datasets: [
@@ -55,7 +56,37 @@ export default new Vuex.Store({
           {
             text: "可読性の高いコーディング",
             subText:
-              "フィードバックに対して迅速な対応ができるように\n長く愛されるサービスになるために、保守性を高く維持する"
+              "フィードバックに対して迅速な対応ができるように\n長く愛されるサービスのためにも保守性の向上"
+          }
+        ]
+      },
+      {
+        pageNumber: 5,
+        textdata: "なぜ学び、伝播させていくのか",
+        texts: [
+          {
+            text: "WEB業界全体の成長速度を追従・牽引するため",
+            subText:
+              "より良いUXを提供するために優れたコーディング力は必須\nサービスに対して適切な言語を用いる"
+          },
+          {
+            text: "周りを巻き込んで成長していく",
+            subText:
+              "大規模サービスは一人では動かせない\nみんながやりがいを感じられる環境を"
+          }
+        ]
+      },
+      {
+        pageNumber: 6,
+        textdata: "hogehoge",
+        texts: [
+          {
+            text: "hogehoge",
+            subText: "hogehoge"
+          },
+          {
+            text: "hogehoge",
+            subText: "hogehoge"
           }
         ]
       }
