@@ -5,6 +5,7 @@
     <v-content>
       <v-container class="fill-height" fluid>
         <router-view></router-view>
+        <div>{{$store.state.index}}</div>
         <TransitionArrow></TransitionArrow>
         <Footer></Footer>
       </v-container>

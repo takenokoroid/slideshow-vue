@@ -9,19 +9,26 @@
 import StandardHeader from "../components/StandardHeader";
 import StandardContent from "../components/StandardContent";
 import WorksContent from "../components/WorksContent";
+import IdealImage from "../components/IdealImageContent";
 
 export default {
   components: {
     StandardHeader,
     StandardContent,
-    WorksContent
+    WorksContent,
+    IdealImage
   },
   data: function() {
     return {
       parentsText: "init-text",
       index: this.$store.getters.getIndex,
       data: this.$store.getters.getDataSets,
-      components: ["dummydummydummy", "StandardContent", "WorksContent"]
+      components: [
+        "dummydummydummy",
+        "StandardContent",
+        "WorksContent",
+        "IdealImage"
+      ]
     };
   },
   created: function() {

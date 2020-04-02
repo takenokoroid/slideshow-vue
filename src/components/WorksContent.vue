@@ -5,13 +5,8 @@
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
             <v-card-title class="headline" v-text="item.title"></v-card-title>
-
-            <v-card-subtitle
-              class="text-br"
-              v-text="item.subtitle"
-            ></v-card-subtitle>
+            <v-card-subtitle class="text-br" v-text="item.subtitle"></v-card-subtitle>
           </div>
-
           <v-avatar class="ma-3" size="125" tile>
             <v-img :src="item.src"></v-img>
           </v-avatar>
@@ -30,7 +25,7 @@ export default {
         src: require("../assets/ioroiFridge.png"),
         title: "IoroiFridge",
         subtitle:
-          "使用技術：Vue+Firebase\n研究室の冷蔵庫を管理する\nはじめて作ったWEBアプリ",
+          "使用技術：Vue.js+Firebase\n研究室の冷蔵庫を管理する\nはじめて作ったWEBアプリ",
         link: "https://takenokoroid.github.io/ioroifridge/"
       },
       {
