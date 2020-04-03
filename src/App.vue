@@ -3,7 +3,7 @@
     <NavigationDrawer></NavigationDrawer>
 
     <v-content>
-      <v-container class="fill-height" fluid>
+      <v-container class="fill-height lime lighten-5 pa-10" fluid>
         <router-view></router-view>
         <div>{{$store.state.index}}</div>
         <TransitionArrow></TransitionArrow>

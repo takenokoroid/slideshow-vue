@@ -1,8 +1,6 @@
 <template>
   <v-row>
-    <span class="display-3 under pl-5 pr-10">
-      {{ text }}
-    </span>
+    <span class="display-4 under pl-5 pr-10 mb-10 mt-10" v-text="text"></span>
   </v-row>
 </template>
 
@@ -19,6 +17,6 @@ export default {
 
 <style>
 .under {
-  border-bottom: solid 3px #87cefa;
+  border-bottom: solid 5px #00c853;
 }
 </style>

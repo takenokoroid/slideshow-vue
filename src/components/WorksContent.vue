@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col v-for="(item, i) in items" :key="i" cols="6">
-      <v-card :color="item.color" dark :href="item.link">
+      <v-card :color="item.color" dark :href="item.link" target="_blank">
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
             <v-card-title class="headline" v-text="item.title"></v-card-title>

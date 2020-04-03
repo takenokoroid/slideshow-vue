@@ -1,39 +1,15 @@
 <template>
   <v-row>
-    <v-col cols="4">
-      <v-img alt="自画像" src="../assets/myImage.jpg" height="500" width="300">
-      </v-img>
+    <v-col cols="5" align="center">
+      <v-img class="inline-flex" height="500" width="400" alt="自画像" src="../assets/myImage.jpg"></v-img>
     </v-col>
-    <v-col cols="8">
+
+    <v-col cols="5">
       <v-row>
-        <v-col cols="6">
+        <v-col v-for="(item, i) in getTexts" :key="i" cols="6">
           <v-card>
-            <v-card-title primary-title>
-              趣味
-            </v-card-title>
-            <v-card-text class="text--primary">
-              釣り ボードゲーム プログラミング
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="6">
-          <v-card>
-            <v-card-title primary-title>
-              好きな言語・フレームワーク
-            </v-card-title>
-            <v-card-text>
-              Vue.js Go
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="6">
-          <v-card>
-            <v-card-title primary-title>
-              興味あるサービス
-            </v-card-title>
-            <v-card-text>
-              Firebase Docker
-            </v-card-text>
+            <v-card-title class="headline" v-text="item.text"></v-card-title>
+            <v-card-subtitle class v-text="item.subText"></v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
@@ -42,7 +18,33 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: function() {
+    return {
+      dataSets: this.$store.getters.getDataSets,
+      index: this.$store.getters.getIndex
+    };
+  },
+  mounted: function() {
+    this.$store.watch(
+      () => {
+        return this.$store.state.index;
+      },
+      () => {
+        this.index = this.$store.getters.getIndex;
+      }
+    );
+  },
+  computed: {
+    getTexts: function() {
+      return this.dataSets[this.index].texts;
+    }
+  }
+};
 </script>
 
-<style></style>
+<style>
+.inline-flex {
+  display: inline-flex;
+}
+</style>

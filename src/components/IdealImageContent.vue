@@ -2,8 +2,8 @@
   <v-row>
     <v-col v-for="(item, i) in getTexts" :key="i" cols="12">
       <dl>
-        <dt v-text="item.text"></dt>
-        <dd class="text-br ml-10" v-text="item.subText"></dd>
+        <dt class="display-1 mb-3" v-text="item.text"></dt>
+        <dd class="text-br ml-10 headline" v-text="item.subText"></dd>
       </dl>
     </v-col>
   </v-row>

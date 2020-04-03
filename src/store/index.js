@@ -22,7 +22,21 @@ export default new Vuex.Store({
       {
         pageNumber: 1,
         textdata: "自己紹介",
-        link: require("../assets/myImage.jpg")
+        link: require("../assets/myImage.jpg"),
+        texts: [
+          {
+            text: "趣味",
+            subText: "釣り ボードゲーム プログラミング"
+          },
+          {
+            text: "好きな言語",
+            subText: "Go Vue.js"
+          },
+          {
+            text: "興味あるサービス",
+            subText: "Firebase Docker"
+          }
+        ]
       },
       {
         pageNumber: 2,

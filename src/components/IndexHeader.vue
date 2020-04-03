@@ -1,8 +1,6 @@
 <template>
   <v-row>
-    <v-flex md10 class="text-right  display-4">
-      {{ text }}
-    </v-flex>
+    <v-col cols="10" class="text-right display-4 font-weight-bold">{{ text }}</v-col>
   </v-row>
 </template>
 
