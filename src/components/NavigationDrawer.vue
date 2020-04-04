@@ -11,23 +11,12 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link>
+        <v-list-item link @click="transitionPage(6)">
           <v-list-item-action>
-            <v-icon>
-              mdi-alpha-e-box
-            </v-icon>
+            <v-icon>mdi-alpha-e-box</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>End</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-car-hatchback</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Move</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

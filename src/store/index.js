@@ -11,7 +11,8 @@ export default new Vuex.Store({
       "/main/works",
       "/main/IdealImage",
       "/main/userDueTo",
-      "/main/engineerDueTo"
+      "/main/engineerDueTo",
+      "/main/end"
     ],
     index: 0,
     datasets: [
@@ -54,7 +55,7 @@ export default new Vuex.Store({
           {
             text: "・周りを巻き込み積極的に成長するWEBエンジニア",
             subText:
-              "流れのはやいWEB業界では成長することは必須\nWEB開発は一人では難しい。チームでの成長が大切"
+              "WEB開発は一人では難しい。チームでの成長が大切\n行き詰ったとき助け合い、サービスを良くしていく"
           }
         ]
       },
@@ -92,15 +93,13 @@ export default new Vuex.Store({
       },
       {
         pageNumber: 6,
-        textdata: "hogehoge",
+        textdata: "結論",
         texts: [
           {
-            text: "hogehoge",
-            subText: "hogehoge"
-          },
-          {
-            text: "hogehoge",
-            subText: "hogehoge"
+            text:
+              "お客様のデータ・生の声をフィードバックし、成長しながらサービスをより良く開発していく",
+            subText:
+              "トレンドに敏感に対応し、多くの人に長く喜ばれるサービスを作っていきたい"
           }
         ]
       }

@@ -5,7 +5,7 @@
     <v-content>
       <v-container class="fill-height lime lighten-5 pa-10" fluid>
         <router-view></router-view>
-        <div>{{$store.state.index}}</div>
+        <div class="fixed-div">{{$store.state.index}}</div>
         <TransitionArrow></TransitionArrow>
         <Footer></Footer>
       </v-container>
@@ -29,3 +29,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.fixed-div {
+  position: fixed;
+  bottom: 100px;
+  width: 90%;
+  text-align: right;
+}
+</style>

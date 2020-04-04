@@ -5,7 +5,7 @@
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
             <v-card-title class="headline" v-text="item.title"></v-card-title>
-            <v-card-subtitle class="text-br" v-text="item.subtitle"></v-card-subtitle>
+            <v-card-subtitle class="text-br title" v-text="item.subtitle"></v-card-subtitle>
           </div>
           <v-avatar class="ma-3" size="125" tile>
             <v-img :src="item.src"></v-img>
@@ -21,7 +21,7 @@ export default {
   data: () => ({
     items: [
       {
-        color: "#1F7087",
+        color: "#607D8B",
         src: require("../assets/ioroiFridge.png"),
         title: "IoroiFridge",
         subtitle:
@@ -29,7 +29,7 @@ export default {
         link: "https://takenokoroid.github.io/ioroifridge/"
       },
       {
-        color: "#36B1C9",
+        color: "#607D8B",
         src: require("../assets/HoCTools.png"),
         title: "Heart of Crown点数計算ツール",
         subtitle:
@@ -37,7 +37,7 @@ export default {
         link: "https://takenokoroid.github.io/controlhoc/"
       },
       {
-        color: "#1F7087",
+        color: "#607D8B",
         src: require("../assets/portfolio.png"),
         title: "ポートフォリオ",
         subtitle:
