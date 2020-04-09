@@ -7,3 +7,5 @@ npm install
 ## how to use
 1. GitHubPagesにいく
 1. 矢印クリックorキーボード矢印で操作できます
+### リンク
+https://takenokoroid.github.io/slideshow-vue/
